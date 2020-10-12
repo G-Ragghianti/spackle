@@ -22,7 +22,7 @@ SpICL also includes a bash script `install_updates` which can be used to install
 
 `./install_updates SPACK_INSTALLTION`
 
-Similarlly, any failed specs are printed to STDOUT and the file `failures_updates.log`.
+Similarlly, any failed specs are printed to STDOUT and the file `failures-update.log`.
 
 ## Post-installation procedure
 
