@@ -1,0 +1,22 @@
+#!/bin/bash -e
+
+DIR=$1
+
+if [[ -z $DIR || ! -d $DIR ]]; then
+  echo Usage: install_updates INSTALL_DIR
+  exit
+fi
+
+rm -rf failures-update.log ~/.intel ~/.spack
+
+source $DIR/share/spack/setup-env.sh
+
+module purge
+
+while read spec; do
+   spack install $spec || echo Error installing new version of $spec >> failures-update.log
+done < <( spack find -xv --no-groups | xargs spack find --format '{name}{variants}' | sort -u )
+
+echo
+cat failures-update.log
+

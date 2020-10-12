@@ -1,0 +1,5 @@
+Optionally include a file containing specs
+separate logs for each spec
+
+Removed intel-daal: failed to download
+gcc won't build with nvptx

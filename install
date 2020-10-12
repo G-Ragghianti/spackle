@@ -1,0 +1,53 @@
+#!/bin/bash -e
+
+SRC=$1
+DEST=$2
+
+if [ -z $SRC ]; then
+  echo Usage: build SOURCE_DEST \[DESTINATION_DIR\]
+  exit
+fi
+
+if [ -z $DEST ]; then
+  DEST=/sw/spack/`date -Idate`
+fi
+
+rm -rf failures.log ~/.intel ~/.spack
+
+if [ ! -d $DEST ];then
+  git clone https://github.com/spack/spack $DEST
+fi
+
+source $DEST/share/spack/setup-env.sh
+
+cp modules.yaml $DEST/etc/spack/
+cp packages.yaml $DEST/etc/spack/
+cp -a licenses $DEST/etc/spack/
+
+module purge
+
+while read compiler; do
+   spack install $compiler
+   spack load --first $compiler
+   spack compiler find
+   spack unload --all
+done < <( source  $SRC/share/spack/setup-env.sh; spack find -x --format '{compiler}' | sort -u )
+
+# get old pkgs from the spec.yaml files
+#while read prefix; do
+#   yaml=$prefix/.spack/spec.yaml
+#   if [ -f $yaml ]; then
+#      echo Installing from $prefix
+#      spack install -f $yaml || echo Error installing $yaml >> failures.log
+#   fi
+#done < <( source  $SRC/share/spack/setup-env.sh; spack find -x --format '{prefix}' )
+
+#get old pkgs using the 'find' cmd
+while read spec; do
+   spack install $spec || echo Error installing $spec >> failures.log
+done < <( source  $SRC/share/spack/setup-env.sh; spack find -xv --no-groups --show-full-compiler)
+echo
+
+if [ -f failures.log ]; then
+   cat failures.log
+fi

@@ -1,0 +1,25 @@
+
+packages:
+  all:
+    compiler: [gcc@7.3.0]
+    target: [arch=x86_64]
+  openmpi:
+    variants: fabrics=verbs schedulers=slurm +thread_multiple +pmi +legacylaunchers +cuda
+  hwloc:
+    variants: +cuda
+  scorep:
+    variants: +shmem
+    providers:
+      mpi: [openmpi@3.1.2]
+  gdb:
+    variants: +python
+  #python:
+  #  version: [3.7.2]
+  slurm:
+    buildable: False
+    externals:
+    - spec: "slurm@17.11.3-2"
+      prefix: /usr
+  intel-parallel-studio:
+    variants: ~mpi
+    

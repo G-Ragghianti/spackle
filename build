@@ -1,0 +1,30 @@
+#!/bin/bash -e
+
+rm -rf failures.log ~/.intel ~/.spack
+if [ -z "$DIR" ]; then
+  DIR=/sw/spack/`date -Idate`
+fi
+
+if [ ! -d $DIR ];then
+  git clone https://github.com/spack/spack $DIR
+fi
+
+source $DIR/share/spack/setup-env.sh
+
+cp modules.yaml $DIR/etc/spack/
+cp packages.yaml $DIR/etc/spack/
+cp -a licenses $DIR/etc/spack/
+
+module purge
+
+spack install gcc@7.3.0
+spack load --first gcc@7.3.0
+spack compiler find
+
+while read spec; do
+   spack install $spec || echo Error installing $spec >> failures.log
+done < packages.txt
+
+echo
+cat failures.log
+

@@ -1,0 +1,46 @@
+#!/bin/bash -e
+
+SRC=$1
+DEST=$2
+
+if [ -z $SRC ]; then
+  echo Usage: build SOURCE_DEST \[DESTINATION_DIR\]
+  exit
+fi
+
+LOCS=$(
+   source $SRC/share/spack/setup-env.sh
+   spack find -xl | awk '{print "/"$1}' | head -10 | grep -E '\w+' | xargs -n1 spack location -i
+)
+
+if [ -z $DEST ]; then
+  DEST=/sw/spack/`date -Idate`
+fi
+
+rm -rf failures.log ~/.intel ~/.spack
+
+if [ ! -d $DEST ];then
+  git clone https://github.com/spack/spack $DEST
+fi
+
+source $DEST/share/spack/setup-env.sh
+
+cp modules.yaml $DEST/etc/spack/
+cp packages.yaml $DEST/etc/spack/
+cp -a licenses $DEST/etc/spack/
+
+module purge
+
+spack install gcc@7.3.0
+spack load --first gcc@7.3.0
+spack compiler find
+
+for dir in $LOCS; do
+   name=$(echo $dir | awk -F/ '{print $NF}')
+   yaml=$dir/.spack/spec.yaml
+   spack install -f $yaml || echo Error installing $name >> failures.log
+done
+
+echo
+cat failures.log
+

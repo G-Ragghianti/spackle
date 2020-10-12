@@ -1,0 +1,78 @@
+cmake
+cscope
+cubelib
+cuda@8.0.61
+cuda@9.0.176
+cuda@9.1.85
+cuda@9.2.88
+dmtcp
+doxygen
+fftw
+flex
+gcc@5.4.0 languages=c,c++,fortran,jit
+gcc@6.4.0 languages=c,c++,fortran,jit
+gcc@7.3.0 languages=c,c++,fortran,jit
+gcc@8.3.0 languages=c,c++,fortran,jit
+gcc@9.2.0 languages=c,c++,fortran,jit
+gcc@8.3.0 +nvptx
+gcc@9.2.0 +nvptx
+gdb
+gdbm
+git
+graphviz
+hpl
+intel-ipp
+intel-mkl@2018.2.199
+intel-mkl@2019.3.199
+intel-mpi@2018.3.222
+intel-mpi@2019.3.199
+intel-parallel-studio@cluster.2019.3
+intel-pin
+isl
+json-c
+kokkos
+likwid
+llvm
+lua
+magma cuda_arch=75 ^cuda@:10.9999
+mercurial
+metis
+mpich
+mvapich2
+nasm
+nccl
+neovim
+netlib-lapack
+netlib-scalapack
+opari2
+openblas
+openmpi ^hwloc@:1.999 +cuda
+otf2
+papi
+pcre
+pdt
+py-cython
+py-matplotlib
+py-mpi4py
+py-numpy
+py-pandas
+py-pytables
+qhull
+scalasca
+sqlite
+superlu
+swig
+texinfo
+the-silver-searcher
+tk
+tmux
+ucx@1.2.2
+ucx@1.3.0
+ucx@1.4.0
+ucx@1.5.0
+ucx@1.6.1
+valgrind
+vim
+xz
+py-cython
+ninja

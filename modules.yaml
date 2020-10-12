@@ -1,0 +1,18 @@
+modules:
+  tcl:
+    blacklist_implicits: false
+    hash_length: 4
+    naming_scheme: '${PACKAGE}/${VERSION}/${COMPILERNAME}-${COMPILERVER}'
+    all:
+      conflict:
+        - '${PACKAGE}'
+      environment:
+        set:
+          '${PACKAGE}_ROOT': '${PREFIX}'
+    cuda:
+      environment:
+        set:
+          'CUDADIR': '${PREFIX}'
+    ^rdma-core:
+      autoload: 'direct'
+
