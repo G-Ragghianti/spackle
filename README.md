@@ -8,7 +8,7 @@ This system manages the update of a spack-based software installation to enable 
 
 The main utility is the bash script `install`.  The script takes two arguments:
 
-`> ./install SOURCE_DIRECTORY DESTINATION_DIRECTORY`
+`./install SOURCE_DIRECTORY DESTINATION_DIRECTORY`
 
 The SOURCE_DIRECTORY is the pre-existing top-level spack directory from which you wish to build a list of software specs.
 
