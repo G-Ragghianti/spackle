@@ -18,6 +18,8 @@ if [ ! -d $DEST ];then
   git clone https://github.com/spack/spack $DEST
 fi
 
+rm -f $DEST/etc/spack/compilers.yaml
+
 source $DEST/share/spack/setup-env.sh
 
 cp modules.yaml $DEST/etc/spack/
@@ -29,9 +31,12 @@ module purge
 while read compiler; do
    spack install $compiler
    spack load --first $compiler
-   spack compiler find
-   spack unload --all
 done < <( source  $SRC/share/spack/setup-env.sh; spack find -x --format '{compiler}' | sort -u )
+
+spack compiler find
+spack compiler list
+spack unload --all
+cp ~/.spack/linux/compilers.yaml $DEST/etc/spack/
 
 # get old pkgs from the spec.yaml files
 #while read prefix; do
