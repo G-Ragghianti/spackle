@@ -16,7 +16,8 @@ packages:
   #python:
   #  version: [3.7.2]
   slurm:
-    buildable: False
+    buildable: True
+    version: [17-11-9-2]
     externals:
     - spec: "slurm@17.11.3-2"
       prefix: /usr

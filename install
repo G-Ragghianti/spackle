@@ -8,6 +8,8 @@ if [ -z $SRC ]; then
   exit
 fi
 
+TMPFILE=/tmp/.$RANDOM
+
 if [ -z $DEST ]; then
   DEST=/sw/spack/`date -Idate`
 fi
@@ -16,15 +18,14 @@ rm -rf failures.log ~/.intel ~/.spack
 
 if [ ! -d $DEST ];then
   git clone https://github.com/spack/spack $DEST
+  cp modules.yaml $DEST/etc/spack/
+  cp packages.yaml $DEST/etc/spack/
+  cp -a licenses $DEST/etc/spack/
 fi
 
 rm -f $DEST/etc/spack/compilers.yaml
 
 source $DEST/share/spack/setup-env.sh
-
-cp modules.yaml $DEST/etc/spack/
-cp packages.yaml $DEST/etc/spack/
-cp -a licenses $DEST/etc/spack/
 
 module purge
 
@@ -32,10 +33,10 @@ module purge
 if [ -d $SRC ]; then
   {
     source  $SRC/share/spack/setup-env.sh
-    spack find -xv --no-groups --show-full-compiler > packages.txt
+    spack find -xv --no-groups --show-full-compiler > $TMPFILE
   }
 elif [ -f $SRC ]; then
-  cp $SRC packages.txt
+  cp $SRC $TMPFILE
 else
   echo Error using input source!
   exit
@@ -44,7 +45,7 @@ fi
 while read compiler; do
    spack install $compiler
    spack load --first $compiler
-done < <( cat packages.txt | grep -oP '%[^\s]+' | sort -u )
+done < <( cat $TMPFILE | grep -oP '%[^\s]+' | sort -u | sed 's/%//' )
 
 spack compiler find
 spack compiler list
