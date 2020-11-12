@@ -58,7 +58,7 @@ fi
 
 while read spec; do
    spack install $spec || echo Error installing $spec >> failures.log
-done < packages.txt
+done < $TMPFILE 
 echo
 
 if [ -f failures.log ]; then
