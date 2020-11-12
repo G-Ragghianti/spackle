@@ -43,14 +43,18 @@ else
 fi
 
 while read compiler; do
+   echo Installing compiler $compiler
    spack install $compiler
    spack load --first $compiler
+   spack compiler find
+   spack unload --all
+   new_compiler=1
 done < <( cat $TMPFILE | grep -oP '%[^\s]+' | sort -u | sed 's/%//' )
 
-spack compiler find
-spack compiler list
-spack unload --all
-cp ~/.spack/linux/compilers.yaml $DEST/etc/spack/
+if [ $new_compiler ]; then
+  spack compiler list
+  cp ~/.spack/linux/compilers.yaml $DEST/etc/spack/
+fi
 
 while read spec; do
    spack install $spec || echo Error installing $spec >> failures.log
