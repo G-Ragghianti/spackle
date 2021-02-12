@@ -11,7 +11,8 @@ fi
 TMPFILE=/tmp/.$RANDOM
 
 if [ -z $DEST ]; then
-  DEST=/sw/spack/`date -Idate`
+  PARENT=`dirname $SRC`
+  DEST=$PARENT/`date -Idate`
 fi
 
 rm -rf failures.log ~/.intel ~/.spack
@@ -31,10 +32,10 @@ module purge
 
 # If a directory is given, search for specs
 if [ -d $SRC ]; then
-  {
+  ( 
     source  $SRC/share/spack/setup-env.sh
     spack find -xv --no-groups --show-full-compiler > $TMPFILE
-  }
+  )
 elif [ -f $SRC ]; then
   cp $SRC $TMPFILE
 else

@@ -1,204 +1,31 @@
-bison@3.0.5%gcc@7.3.0 
-bison@3.0.5%gcc@7.3.0 
-bison@3.6.4%gcc@7.3.0 
-cmake@3.0.2%gcc@7.3.0 ~doc+ncurses+openssl~ownlibs~qt
-cmake@3.1.0%gcc@7.3.0 ~doc+ncurses+openssl~ownlibs~qt
-cmake@3.3.1%gcc@7.3.0 ~doc+ncurses+openssl~ownlibs~qt
-cmake@3.4.3%gcc@7.3.0 ~doc+ncurses+openssl~ownlibs~qt
-cmake@3.5.2%gcc@7.3.0 ~doc+ncurses+openssl~ownlibs~qt
-cmake@3.6.1%gcc@7.3.0 ~doc+ncurses+openssl~ownlibs~qt patches=7c14b1146c5cb61f81a6751e8ed990f7a08886dca99384b007bbeb1f488dfda4
-cmake@3.7.2%gcc@7.3.0 ~doc+ncurses+openssl~ownlibs~qt patches=1c540040c7e203dd8e27aa20345ecb07fe06570d56410a24a266ae570b1c4c39,dd3a40d4d92f6b2158b87d6fb354c277947c776424aa03f6dc8096cf3135f5d0
-cmake@3.8.2%gcc@7.3.0 ~doc+ncurses+openssl~ownlibs~qt patches=1c540040c7e203dd8e27aa20345ecb07fe06570d56410a24a266ae570b1c4c39,dd3a40d4d92f6b2158b87d6fb354c277947c776424aa03f6dc8096cf3135f5d0
-cmake@3.9.6%gcc@7.3.0 ~doc+ncurses+openssl~ownlibs~qt patches=1c540040c7e203dd8e27aa20345ecb07fe06570d56410a24a266ae570b1c4c39,dd3a40d4d92f6b2158b87d6fb354c277947c776424aa03f6dc8096cf3135f5d0
-cmake@3.10.3%gcc@7.3.0 ~doc+ncurses+openssl~ownlibs~qt patches=1c540040c7e203dd8e27aa20345ecb07fe06570d56410a24a266ae570b1c4c39,dd3a40d4d92f6b2158b87d6fb354c277947c776424aa03f6dc8096cf3135f5d0
-cmake@3.11.4%gcc@7.3.0 ~doc+ncurses+openssl~ownlibs~qt patches=1c540040c7e203dd8e27aa20345ecb07fe06570d56410a24a266ae570b1c4c39,93488edf3f89cef6f3c77e821007c022e88e9f1f566ae9bf824a87ecbac97ebb,dd3a40d4d92f6b2158b87d6fb354c277947c776424aa03f6dc8096cf3135f5d0
-cmake@3.12.4%gcc@7.3.0 ~doc+ncurses+openssl~ownlibs~qt patches=1c540040c7e203dd8e27aa20345ecb07fe06570d56410a24a266ae570b1c4c39,93488edf3f89cef6f3c77e821007c022e88e9f1f566ae9bf824a87ecbac97ebb,dd3a40d4d92f6b2158b87d6fb354c277947c776424aa03f6dc8096cf3135f5d0
-cmake@3.13.4%gcc@7.3.0 ~doc+ncurses+openssl~ownlibs~qt patches=1c540040c7e203dd8e27aa20345ecb07fe06570d56410a24a266ae570b1c4c39
-cmake@3.14.0%gcc@7.3.0 ~doc+ncurses+openssl~ownlibs~qt patches=1c540040c7e203dd8e27aa20345ecb07fe06570d56410a24a266ae570b1c4c39
-cmake@3.18.2%gcc@7.3.0 ~doc+ncurses+openssl~ownlibs~qt
-cmake@3.18.2%gcc@7.3.0 ~doc+ncurses+openssl+ownlibs~qt
-cscope@15.8b%gcc@7.3.0 
-cscope@15.9%gcc@7.3.0 
-cubelib@4.4.2%gcc@7.3.0 
-cubelib@4.5%gcc@7.3.0 
-cuda@6.5.14%gcc@7.3.0 
-cuda@7.5.18%gcc@7.3.0 
-cuda@8.0.61%gcc@7.3.0 
-cuda@9.0.176%gcc@7.3.0 
-cuda@9.1.85%gcc@7.3.0 
-cuda@9.2.88%gcc@7.3.0 
-cuda@10.1.243%gcc@7.3.0 
-cuda@11.0.2%gcc@7.3.0 
-cuda@11.1.0%gcc@7.3.0 
-dmtcp@2.5.2%gcc@7.3.0 
-dmtcp@2.6.0%gcc@7.3.0 
-doxygen@1.8.15%gcc@7.3.0 ~graphviz~mscgen build_type=RelWithDebInfo
-doxygen@1.8.17%gcc@7.3.0 ~graphviz~mscgen build_type=RelWithDebInfo
-fftw@3.3.8%gcc@7.3.0 +mpi~openmp~pfft_patches precision=double,float
-fftw@3.3.8%gcc@7.3.0 +mpi+openmp~pfft_patches precision=double,float
-flex@2.6.4%gcc@7.3.0 +lex patches=09c22e5c6fef327d3e48eb23f0d610dcd3a35ab9207f12e0f875701c677978d3
-gcc@4.8.5%gcc@4.8.5 ~binutils~bootstrap~nvptx~piclibs~strip languages=c,c++,fortran patches=0689c26bd7f38c5c9594eb8a4932ae7fce96cc8796c45839e050dc42c83112f1
-gcc@4.9.4%gcc@7.3.0 ~binutils~bootstrap~nvptx~piclibs~strip languages=c,c++,fortran patches=27e982924b2fcac628c289aa9975753d645fd9308f3bdc1b09ae2444aa6547e0,7112abbff4f89980b907c01913d3075a354c6ba8c96b2c453e6941ce9fd99c4c,f5643d90fd8fdc8e86ae886b39c3ffb710daeefd5848c3c08447b77b77cdf162,f73de87bce5575d4792f9b62fd0c4ddd94849dc66b6aea908631ac1fd54350ae
-gcc@5.4.0%gcc@7.3.0 ~binutils~bootstrap~nvptx~piclibs~strip languages=c,c++,fortran patches=1ee899af9974bfdf7d97e8b420d822c8140790cc4c7a46ab8dec657dd8cc5e49,27e982924b2fcac628c289aa9975753d645fd9308f3bdc1b09ae2444aa6547e0,51aebe82afc9a0433ca3503a36592edf5ca769b1433986919cfb9ae2ddf3e343,5b3c22d33abbc6b218515ddf9e914c3eb02ea0e83b7a4e3bab0e043f93e3d4f3,a9762dc030444a0c17d911caaadb7e7dac38264e8db7aa2cf54b07c9f0c0e606,f73de87bce5575d4792f9b62fd0c4ddd94849dc66b6aea908631ac1fd54350ae
-gcc@5.4.0%gcc@7.3.0 ~binutils~bootstrap~nvptx~piclibs~strip languages=c,c++,fortran,jit patches=1ee899af9974bfdf7d97e8b420d822c8140790cc4c7a46ab8dec657dd8cc5e49,27e982924b2fcac628c289aa9975753d645fd9308f3bdc1b09ae2444aa6547e0,51aebe82afc9a0433ca3503a36592edf5ca769b1433986919cfb9ae2ddf3e343,5b3c22d33abbc6b218515ddf9e914c3eb02ea0e83b7a4e3bab0e043f93e3d4f3,a9762dc030444a0c17d911caaadb7e7dac38264e8db7aa2cf54b07c9f0c0e606,f73de87bce5575d4792f9b62fd0c4ddd94849dc66b6aea908631ac1fd54350ae
-gcc@6.3.0%gcc@7.3.0 ~binutils~bootstrap~nvptx~piclibs~strip languages=c,c++,fortran patches=1ee899af9974bfdf7d97e8b420d822c8140790cc4c7a46ab8dec657dd8cc5e49,51aebe82afc9a0433ca3503a36592edf5ca769b1433986919cfb9ae2ddf3e343,5b3c22d33abbc6b218515ddf9e914c3eb02ea0e83b7a4e3bab0e043f93e3d4f3,a9762dc030444a0c17d911caaadb7e7dac38264e8db7aa2cf54b07c9f0c0e606,f73de87bce5575d4792f9b62fd0c4ddd94849dc66b6aea908631ac1fd54350ae
-gcc@6.4.0%gcc@7.3.0 ~binutils~bootstrap~nvptx~piclibs~strip languages=c,c++,fortran patches=1ee899af9974bfdf7d97e8b420d822c8140790cc4c7a46ab8dec657dd8cc5e49,51aebe82afc9a0433ca3503a36592edf5ca769b1433986919cfb9ae2ddf3e343,5b3c22d33abbc6b218515ddf9e914c3eb02ea0e83b7a4e3bab0e043f93e3d4f3,a9762dc030444a0c17d911caaadb7e7dac38264e8db7aa2cf54b07c9f0c0e606,f73de87bce5575d4792f9b62fd0c4ddd94849dc66b6aea908631ac1fd54350ae
-gcc@6.4.0%gcc@7.3.0 ~binutils~bootstrap~nvptx~piclibs~strip languages=c,c++,fortran,jit patches=1ee899af9974bfdf7d97e8b420d822c8140790cc4c7a46ab8dec657dd8cc5e49,51aebe82afc9a0433ca3503a36592edf5ca769b1433986919cfb9ae2ddf3e343,5b3c22d33abbc6b218515ddf9e914c3eb02ea0e83b7a4e3bab0e043f93e3d4f3,a9762dc030444a0c17d911caaadb7e7dac38264e8db7aa2cf54b07c9f0c0e606,f73de87bce5575d4792f9b62fd0c4ddd94849dc66b6aea908631ac1fd54350ae
-gcc@7.3.0%gcc@4.8.5 ~binutils~bootstrap~nvptx~piclibs~strip languages=c,c++,fortran patches=51aebe82afc9a0433ca3503a36592edf5ca769b1433986919cfb9ae2ddf3e343,b620e9257ec6b9845f961931b0aa92c35b37e72b15d88ee392c7b67620ebaa2f,dc1ca240b7fb70112ae6cc47cd86925adf78d29ed9d0c26b0c51d52e40ceca0e
-gcc@7.3.0%gcc@7.3.0 ~binutils~bootstrap~nvptx~piclibs~strip languages=c,c++,fortran patches=51aebe82afc9a0433ca3503a36592edf5ca769b1433986919cfb9ae2ddf3e343,b620e9257ec6b9845f961931b0aa92c35b37e72b15d88ee392c7b67620ebaa2f,dc1ca240b7fb70112ae6cc47cd86925adf78d29ed9d0c26b0c51d52e40ceca0e
-gcc@7.3.0%gcc@7.3.0 ~binutils~bootstrap~nvptx~piclibs~strip languages=c,c++,fortran,jit patches=51aebe82afc9a0433ca3503a36592edf5ca769b1433986919cfb9ae2ddf3e343,b620e9257ec6b9845f961931b0aa92c35b37e72b15d88ee392c7b67620ebaa2f,dc1ca240b7fb70112ae6cc47cd86925adf78d29ed9d0c26b0c51d52e40ceca0e
-gcc@8.2.0%gcc@7.3.0 ~binutils~bootstrap~nvptx~piclibs~strip languages=c,c++,fortran patches=49341f7807b12a89750c010a20707598f83121da9829150d4049ed3a1a140564,dc1ca240b7fb70112ae6cc47cd86925adf78d29ed9d0c26b0c51d52e40ceca0e
-gcc@8.3.0%gcc@4.8.5 ~binutils~bootstrap~nvptx~piclibs~strip languages=c,c++,fortran patches=49341f7807b12a89750c010a20707598f83121da9829150d4049ed3a1a140564,dc1ca240b7fb70112ae6cc47cd86925adf78d29ed9d0c26b0c51d52e40ceca0e
-gcc@8.3.0%gcc@7.3.0 ~binutils~bootstrap~nvptx~piclibs~strip languages=c,c++,fortran patches=49341f7807b12a89750c010a20707598f83121da9829150d4049ed3a1a140564,dc1ca240b7fb70112ae6cc47cd86925adf78d29ed9d0c26b0c51d52e40ceca0e
-gcc@8.3.0%gcc@7.3.0 ~binutils~bootstrap~nvptx~piclibs~strip languages=c,c++,fortran,jit patches=49341f7807b12a89750c010a20707598f83121da9829150d4049ed3a1a140564,dc1ca240b7fb70112ae6cc47cd86925adf78d29ed9d0c26b0c51d52e40ceca0e
-gcc@9.2.0%gcc@7.3.0 ~binutils~bootstrap~nvptx~piclibs~strip languages=c,c++,fortran,jit patches=49341f7807b12a89750c010a20707598f83121da9829150d4049ed3a1a140564,dc1ca240b7fb70112ae6cc47cd86925adf78d29ed9d0c26b0c51d52e40ceca0e
-gcc@10.2.0%gcc@4.8.5 ~binutils~bootstrap~nvptx~piclibs~strip languages=c,c++,fortran patches=2c18531a23623596e1daf6f0dd963cf72c208945ecad90515640c3ab23991159
-gcc@10.2.0%gcc@7.3.0 ~binutils~bootstrap~nvptx~piclibs~strip languages=c,c++,fortran patches=2c18531a23623596e1daf6f0dd963cf72c208945ecad90515640c3ab23991159
-gcc@10.2.0%gcc@7.3.0 ~binutils~bootstrap~nvptx~piclibs~strip languages=c,c++,fortran,jit patches=2c18531a23623596e1daf6f0dd963cf72c208945ecad90515640c3ab23991159
-gdb@8.2%gcc@7.3.0 ~gold~ld~lto+python~quad~source-highlight~tui+xz
-gdb@8.3.1%gcc@7.3.0 ~gold~ld~lto+python~quad~source-highlight~tui+xz
-gdb@9.2%gcc@7.3.0 ~gold~ld~lto+python~quad~source-highlight~tui+xz
-gdbm@1.14.1%gcc@7.3.0 
-gdbm@1.18.1%gcc@7.3.0 
-git@2.20.1%gcc@7.3.0 ~tcltk
-git@2.28.0%gcc@7.3.0 ~tcltk
-gperftools@2.7%gcc@7.3.0 
-graphviz@2.40.1%gcc@7.3.0 ~expat~ghostscript~gtkplus~gts~java~libgd~pangocairo~poppler~qt~quartz~x patches=cbb1162d4c01fe7e535c049adef1497fb8f0310f31a181f49cf2a8341985205b
-graphviz@2.44.1%gcc@7.3.0 ~expat~ghostscript~gtkplus~gts~java~libgd~pangocairo~poppler~qt~quartz~x patches=cbb1162d4c01fe7e535c049adef1497fb8f0310f31a181f49cf2a8341985205b
 hpl@2.3%gcc@7.3.0 ~openmp
 hpl@2.3%gcc@7.3.0 +openmp
-intel-ipp@2020.2.254%gcc@7.3.0 
-intel-ipp@2020.2.254%gcc@7.3.0 
 intel-mkl@2017.4.239%gcc@7.3.0 ~ilp64+shared threads=none
 intel-mkl@2018.2.199%gcc@7.3.0 ~ilp64+shared threads=none
 intel-mkl@2019.3.199%gcc@7.3.0 ~ilp64+shared threads=none
-intel-mkl@2020.3.279%gcc@7.3.0 ~ilp64+shared threads=none
-intel-mpi@2018.3.222%gcc@7.3.0 
-intel-mpi@2019.3.199%gcc@7.3.0 
-intel-mpi@2019.8.254%gcc@7.3.0 
+intel-mpi@2018.3.222%gcc@7.3.0
+intel-mpi@2019.3.199%gcc@7.3.0
 intel-parallel-studio@cluster.2019.3%gcc@7.3.0 ~advisor~clck+daal~gdb~ilp64~inspector+ipp~itac+mkl~mpi~newdtags+rpath+shared+tbb~vtune auto_dispatch=none threads=none
 intel-parallel-studio@cluster.2020.1%gcc@7.3.0 ~advisor~clck+daal~gdb~ilp64~inspector+ipp~itac+mkl~mpi~newdtags+rpath+shared+tbb~vtune auto_dispatch=none threads=none
-intel-pin@3.7%gcc@7.3.0 
-intel-pin@3.15%gcc@7.3.0 
-isl@0.19%gcc@7.3.0 
-isl@0.21%gcc@7.3.0 
-json-c@0.13.1%gcc@7.3.0 
-kokkos@3.2.00%gcc@7.3.0 ~aggressive_vectorization~compiler_warnings~cuda~cuda_lambda~cuda_ldg_intrinsic~cuda_relocatable_device_code~cuda_uvm~debug~debug_bounds_check~debug_dualview_modify_check~deprecated_code~examples~explicit_instantiation~hip~hpx~hpx_async_dispatch~hwloc~memkind~numactl~openmp~pic+profiling~profiling_load_print~pthread~qthread+serial+shared~tests~wrapper amd_gpu_arch=none build_type=RelWithDebInfo cuda_arch=none std=11
-likwid@5.0.1%gcc@7.3.0 +fortran patches=c3b8f939a46b425665577ce764d4fba080a23cab5999c53db71655fd54d7e0b1
-llvm@9.0.0%gcc@7.3.0 ~all_targets+clang~code_signing+compiler-rt~cuda+gold+internal_unwind+libcxx+lld+lldb~mlir~omp_debug~omp_tsan+polly~python~shared_libs~split_dwarf build_type=Release cuda_arch=none patches=332fe65f78b2b4a242045ec2394eee8db631fbcbe27b0016d5e5c859e34f47af
-llvm@10.0.1%gcc@7.3.0 ~all_targets+clang~code_signing+compiler-rt~cuda+gold+internal_unwind+libcxx+lld+lldb~mlir~omp_debug~omp_tsan+polly~python~shared_libs~split_dwarf build_type=Release cuda_arch=none patches=332fe65f78b2b4a242045ec2394eee8db631fbcbe27b0016d5e5c859e34f47af
-llvm-flang@20190329%gcc@7.3.0 ~all_targets~cuda build_type=RelWithDebInfo cuda_arch=none
-lua@5.3.4%gcc@7.3.0 +shared
-lua@5.3.5%gcc@7.3.0 +shared
-magma@2.5.3%gcc@7.3.0 +cuda+fortran+shared build_type=RelWithDebInfo cuda_arch=75
-mercurial@4.4.1%gcc@7.3.0 
-mercurial@5.3%gcc@7.3.0 
-metis@5.1.0%gcc@7.3.0 ~gdb~int64~real64+shared build_type=Release patches=4991da938c1d3a1d3dea78e49bbebecba00273f98df2a656e38b83d55b281da1,b1225da886605ea558db7ac08dd8054742ea5afe5ed61ad4d0fe7a495b1270d2
-mpich@3.3.2%gcc@7.3.0 ~argobots+fortran+hwloc+hydra+libxml2+pci+romio~slurm~verbs+wrapperrpath device=ch3 netmod=tcp patches=eb982de3366d48cbc55eb5e0df43373a45d9f51df208abf0835a72dc6c0b4774 pmi=pmi
-mvapich2@2.3.4%gcc@7.3.0 ~alloca~cuda~debug+regcache+wrapperrpath ch3_rank_bits=32 fabrics=mrail file_systems=auto process_managers=auto threads=multiple
-nasm@2.13.03%gcc@7.3.0 
-nasm@2.15.05%gcc@7.3.0 
-nccl@2.7.8-1%gcc@7.3.0 +cuda cuda_arch=none
-ncurses@6.1%gcc@7.3.0 ~symlinks~termlib
-ncurses@6.2%gcc@7.3.0 ~symlinks~termlib
-neovim@0.4.3%gcc@7.3.0  build_type=RelWithDebInfo
-netlib-lapack@3.8.0%gcc@7.3.0 ~external-blas+lapacke+shared~xblas build_type=RelWithDebInfo patches=5c79286f3d08a0b0f1f3acba2a92ee698647716ba8c6c0ae20c9cc2713e6f139,ad3d41fe9ff94b7661e09fceaf2b2e4b8c83510c1465c016e161541b4429b5ee
-netlib-scalapack@2.0.2%gcc@7.3.0 ~pic+shared build_type=RelWithDebInfo patches=1c9ce5fee1451a08c2de3cc87f446aeda0b818ebbce4ad0d980ddf2f2a0b2dc4,22ebf4e3d5a6356cd6086ea65bfdf30f9d0a2038136127590cd269d15bdb03af,e8f30dd1f26e523dfb552f8d7b8ad26ac88fc0c8d72e3d4f9a9717a3383e0b33,f2baedde688ffe4c20943c334f580eb298e04d6f35c86b90a1f4e8cb7ae344a2
-netlib-scalapack@2.1.0%gcc@7.3.0 ~pic+shared build_type=RelWithDebInfo patches=1c9ce5fee1451a08c2de3cc87f446aeda0b818ebbce4ad0d980ddf2f2a0b2dc4,f2baedde688ffe4c20943c334f580eb298e04d6f35c86b90a1f4e8cb7ae344a2
-ninja@1.10.0%gcc@7.3.0 
-ninja@1.10.1%gcc@7.3.0 
-numactl@2.0.12%gcc@7.3.0 
-opari2@2.0.1%gcc@7.3.0 
-opari2@2.0.5%gcc@7.3.0 
-openblas@0.2.20%gcc@7.3.0 ~consistent_fpcsr~ilp64+pic+shared patches=47cfa7a952ac7b2e4632c73ae199d69fb54490627b66a62c681e21019c4ddc9d threads=none
-openblas@0.3.5%gcc@7.3.0 ~consistent_fpcsr~ilp64+pic+shared threads=none
-openblas@0.3.7%gcc@7.3.0 ~consistent_fpcsr~ilp64+pic+shared threads=none
-openblas@0.3.10%gcc@7.3.0 ~consistent_fpcsr~ilp64+pic+shared threads=none
+kokkos@3.2.00%gcc@7.3.0 ~aggressive_vectorization~compiler_warnings~cuda~cuda_lambda~cuda_ldg_intrinsic~cuda_relocatable_device_code~cuda_uvm~debug~debug_bounds_check~debug_dualview_modify_check~deprecated_code~examples~explicit_instantiation~hip~hpx~hpx_async_dispatch~hwloc~ipo~memkind~numactl~openmp~pic+profiling~profiling_load_print~pthread~qthread+serial+shared~tests~wrapper amd_gpu_arch=none build_type=RelWithDebInfo cuda_arch=none std=11
+lapackpp@2020.10.01%gcc@7.3.0 ~ipo+shared build_type=RelWithDebInfo
+llvm@9.0.0%gcc@7.3.0 ~all_targets+clang~code_signing+compiler-rt~cuda+gold+internal_unwind~ipo+libcxx+lld+lldb~mlir~omp_debug~omp_tsan+polly~python~shared_libs~split_dwarf build_type=Release cuda_arch=none patches=332fe65f78b2b4a242045ec2394eee8db631fbcbe27b0016d5e5c859e34f47af
+netlib-scalapack@2.0.2%gcc@7.3.0 ~ipo~pic+shared build_type=RelWithDebInfo patches=1c9ce5fee1451a08c2de3cc87f446aeda0b818ebbce4ad0d980ddf2f2a0b2dc4,22ebf4e3d5a6356cd6086ea65bfdf30f9d0a2038136127590cd269d15bdb03af,e8f30dd1f26e523dfb552f8d7b8ad26ac88fc0c8d72e3d4f9a9717a3383e0b33,f2baedde688ffe4c20943c334f580eb298e04d6f35c86b90a1f4e8cb7ae344a2
+netlib-scalapack@2.1.0%gcc@7.3.0 ~ipo~pic+shared build_type=RelWithDebInfo patches=1c9ce5fee1451a08c2de3cc87f446aeda0b818ebbce4ad0d980ddf2f2a0b2dc4,f2baedde688ffe4c20943c334f580eb298e04d6f35c86b90a1f4e8cb7ae344a2
 openmpi@3.1.2%gcc@7.3.0 ~atomics~cuda~cxx+cxx_exceptions+gpfs~java+legacylaunchers~lustre~memchecker+pmi~singularity~sqlite3+static+thread_multiple+vt+wrapper-rpath fabrics=verbs patches=32effdf1deab19ca87850161d3ad8ff34540c9e26f6bf40cd64839ea47a3a0e0 schedulers=slurm
 openmpi@3.1.3%gcc@7.3.0 ~atomics~cuda~cxx+cxx_exceptions+gpfs~java+legacylaunchers~lustre~memchecker+pmi~singularity~sqlite3+static+thread_multiple+vt+wrapper-rpath fabrics=verbs schedulers=slurm
 openmpi@3.1.6%gcc@7.3.0 ~atomics~cuda~cxx+cxx_exceptions+gpfs~java+legacylaunchers~lustre~memchecker+pmi~singularity~sqlite3+static+thread_multiple+vt+wrapper-rpath fabrics=verbs schedulers=slurm
 openmpi@3.1.6%gcc@7.3.0 ~atomics+cuda~cxx~cxx_exceptions+gpfs~java+legacylaunchers~lustre~memchecker+pmi~singularity~sqlite3+static+thread_multiple+vt+wrapper-rpath fabrics=verbs schedulers=slurm
 openmpi@4.0.2%gcc@7.3.0 ~atomics+cuda~cxx+cxx_exceptions+gpfs~java+legacylaunchers~lustre~memchecker+pmi~singularity~sqlite3+static+thread_multiple+vt+wrapper-rpath fabrics=verbs patches=073477a76bba780c67c36e959cd3ee6910743e2735c7e76850ffba6791d498e4 schedulers=slurm
-otf2@2.0%gcc@7.3.0 
-otf2@2.1.1%gcc@7.3.0 
-otf2@2.2%gcc@7.3.0 
-papi@5.5.1%gcc@7.3.0 +example~infiniband~lmsensors~powercap~rapl~sde+shared~static_tools
-papi@5.6.0%gcc@7.3.0 +example~infiniband~lmsensors~powercap~rapl~sde+shared~static_tools
-papi@6.0.0.1%gcc@7.3.0 +example~infiniband~lmsensors~powercap~rapl~sde+shared~static_tools
-pcre@8.42%gcc@7.3.0 ~jit+multibyte+utf
-pcre@8.44%gcc@7.3.0 ~jit+multibyte+utf
-pdt@3.22.1%gcc@7.3.0 ~pic
-pdt@3.25.1%gcc@7.3.0 ~pic
-py-appdirs@1.4.3%gcc@7.3.0 
-py-bottleneck@1.2.1%gcc@7.3.0 
-py-cycler@0.10.0%gcc@7.3.0 
-py-cython@0.28.3%gcc@7.3.0 
-py-cython@0.29.14%gcc@7.3.0 
-py-cython@0.29.21%gcc@7.3.0 
-py-enum34@1.1.6%gcc@7.3.0 
-py-lit@0.5.0%gcc@7.3.0 
-py-lit@0.7.1%gcc@7.3.0 
+plasma@20.9.20%gcc@7.3.0 ~ipo~lua+shared build_type=RelWithDebInfo
+py-bottleneck@1.2.1%gcc@7.3.0
 py-matplotlib@3.3.2%gcc@7.3.0 ~animation~fonts+image~latex~movies backend=agg
-py-mock@2.0.0%gcc@7.3.0 
-py-mock@3.0.5%gcc@7.3.0 
-py-mpi4py@3.0.1%gcc@7.3.0 
-py-mpi4py@3.0.3%gcc@7.3.0 
-py-nose@1.3.7%gcc@7.3.0 
-py-numexpr@2.6.1%gcc@7.3.0 
-py-numexpr@2.7.0%gcc@7.3.0 
+py-numexpr@2.6.1%gcc@7.3.0
+py-numexpr@2.7.0%gcc@7.3.0
 py-numpy@1.16.2%gcc@7.3.0 +blas+lapack patches=196dc7cc8e1367de199726d4e005bba50c3d13fb2843c4753c5f07f7894f10c9
 py-numpy@1.19.2%gcc@7.3.0 +blas+lapack
-py-packaging@16.8%gcc@7.3.0 
-py-packaging@19.2%gcc@7.3.0 
-py-pandas@1.1.3%gcc@7.3.0 
-py-pbr@1.10.0%gcc@7.3.0 
-py-pbr@5.4.3%gcc@7.3.0 
-py-pillow@3.2.0%gcc@7.3.0 ~freetype~imagequant+jpeg~jpeg2000~lcms~tiff~webp~webpmux~xcb+zlib
-py-pillow@7.2.0%gcc@7.3.0 ~freetype~imagequant+jpeg~jpeg2000~lcms~tiff~webp~webpmux~xcb+zlib
-py-pip@10.0.1%gcc@7.3.0 
-py-pip@19.0.3%gcc@7.3.0 
-py-pip@20.2%gcc@7.3.0 
-py-pyparsing@2.2.0%gcc@7.3.0 
-py-pyparsing@2.4.2%gcc@7.3.0 
-py-pytz@2020.1%gcc@7.3.0 
-py-setuptools@40.4.3%gcc@7.3.0 
-py-setuptools@50.1.0%gcc@7.3.0 
-py-six@1.10.0%gcc@7.3.0 
-py-six@1.14.0%gcc@7.3.0 
-py-subprocess32@3.5.4%gcc@7.3.0 
+py-pandas@1.1.3%gcc@7.3.0
 py-tables@3.6.1%gcc@7.3.0 ~bzip2~lzo+zlib
-py-tables@3.6.1%gcc@7.3.0 ~bzip2~lzo+zlib
-py-virtualenv@16.4.1%gcc@7.3.0 
-py-virtualenv@16.7.6%gcc@7.3.0 
-python@3.7.2%gcc@7.3.0 +bz2+ctypes+dbm~debug+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4~uuid+zlib patches=c129e34472ee39b1083c38a49ad06a8573d8b3b208743a120ca4c0818cdf1801
-python@3.8.5%gcc@7.3.0 +bz2+ctypes+dbm~debug+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4~uuid+zlib patches=0d98e93189bc278fbc37a50ed7f183bd8aaf249a8e1670a465f0db6bb4f8cf87
-qhull@2015.2%gcc@7.3.0  build_type=RelWithDebInfo patches=10ddc62a1600b0ede23fb0502e29dca389d18689fd8dfe7a849e3a989c0e607e
-qhull@2020.1%gcc@7.3.0  build_type=RelWithDebInfo
-scalasca@2.4%gcc@7.3.0 
-scalasca@2.5%gcc@7.3.0 
-sqlite@3.26.0%gcc@7.3.0 +column_metadata+fts~functions~rtree
-sqlite@3.33.0%gcc@7.3.0 +column_metadata+fts~functions~rtree
+py-torch@1.6.0%gcc@7.3.0 ~binary~caffe2+cuda+cudnn~distributed~fbgemm~ffmpeg~gloo~leveldb~lmdb~magma~miopen+mkldnn+nccl~nnpack~opencv+openmp~qnnpack~redis~rocm~tbb~test~xnnpack~zstd cuda_arch=75
+slate@develop%gcc@7.3.0 +cuda+mpi+openmp
 superlu@5.2.1%gcc@7.3.0 +pic
-swig@3.0.12%gcc@7.3.0 
-swig@4.0.2%gcc@7.3.0 
-texinfo@6.5%gcc@7.3.0  patches=12f6edb0c6b270b8c8dba2ce17998c580db01182d871ee32b7b6e4129bd1d23a,1732115f651cff98989cb0215d8f64da5e0f7911ebf0c13b064920f088f2ffe1
-the-silver-searcher@2.1.0%gcc@7.3.0 
-the-silver-searcher@2.2.0%gcc@7.3.0 
-tk@8.6.6%gcc@7.3.0 +xft+xss
-tk@8.6.8%gcc@7.3.0 +xft+xss
-tmux@2.8%gcc@7.3.0 
-tmux@3.0a%gcc@7.3.0 
-tmux@3.1b%gcc@7.3.0 
-ucx@1.2.2%gcc@7.3.0 ~assertions~cuda~debug~gdrcopy~java~knem~logging+optimizations~parameter_checking+pic~thread_multiple~xpmem cuda_arch=none
-ucx@1.3.0%gcc@7.3.0 ~assertions~cuda~debug~gdrcopy~java~knem~logging+optimizations~parameter_checking+pic~thread_multiple~xpmem cuda_arch=none
-ucx@1.4.0%gcc@7.3.0 ~assertions~cuda~debug~gdrcopy~java~knem~logging+optimizations~parameter_checking+pic~thread_multiple~xpmem cuda_arch=none
-ucx@1.5.0%gcc@7.3.0 ~assertions~cuda~debug~gdrcopy~java~knem~logging+optimizations~parameter_checking+pic~thread_multiple~xpmem cuda_arch=none
-ucx@1.6.1%gcc@7.3.0 ~assertions~cuda~debug~gdrcopy~java~knem~logging+optimizations~parameter_checking+pic~thread_multiple~xpmem cuda_arch=none
-ucx@1.9.0%gcc@7.3.0 ~assertions~cuda~debug~gdrcopy~java~knem~logging+optimizations~parameter_checking+pic~thread_multiple~xpmem cuda_arch=none
-valgrind@3.14.0%gcc@7.3.0 +boost+mpi+only64bit+ubsan
-valgrind@3.15.0%gcc@7.3.0 +boost+mpi+only64bit+ubsan
-vim@8.0.1376%gcc@7.3.0 ~big~cscope~gui~huge~lua~normal~perl~python~ruby~small~tiny~x
-vim@8.2.1201%gcc@7.3.0 ~big~cscope~gui~huge~lua~normal~perl~python~ruby~small~tiny~x
-xz@5.2.4%gcc@7.3.0 
-xz@5.2.4%gcc@7.3.0 ~pic
-xz@5.2.5%gcc@7.3.0 ~pic

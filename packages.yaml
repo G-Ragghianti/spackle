@@ -5,6 +5,9 @@ packages:
     target: [arch=x86_64]
   openmpi:
     variants: fabrics=verbs schedulers=slurm +thread_multiple +pmi +legacylaunchers +cuda
+  openblas:
+    variants: threads=openmp
+    version: [0.3.10]
   hwloc:
     variants: +cuda
   scorep:
@@ -13,11 +16,8 @@ packages:
       mpi: [openmpi@3.1.2]
   gdb:
     variants: +python
-  #python:
-  #  version: [3.7.2]
   slurm:
-    buildable: True
-    version: [17-11-9-2]
+    buildable: False
     externals:
     - spec: "slurm@17.11.3-2"
       prefix: /usr
