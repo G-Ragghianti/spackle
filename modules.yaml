@@ -6,9 +6,9 @@ modules:
     all:
       conflict:
         - '${PACKAGE}'
-      #environment:
-      #  set:
-      #    '${PACKAGE}_ROOT': '${PREFIX}'
+      environment:
+        set:
+          'ICL_${PACKAGE}_ROOT': '${PREFIX}'
     cuda:
       environment:
         set:
