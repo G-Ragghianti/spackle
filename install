@@ -59,7 +59,6 @@ fi
 
 while read spec; do
    spack install $spec || echo Error installing $spec >> failures.log
-   sleep 30
 done < $TMPFILE 
 echo
 
