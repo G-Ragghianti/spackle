@@ -63,6 +63,8 @@ while read spec; do
 done < $TMPFILE 
 echo
 
+grep Another $DEST/opt/spack/*/*/*/.spack/spack-build-out.txt >> failures.log
+
 if [ -f failures.log ]; then
    cat failures.log
 fi
