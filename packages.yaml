@@ -23,4 +23,3 @@ packages:
       prefix: /usr
   intel-parallel-studio:
     variants: ~mpi
-    

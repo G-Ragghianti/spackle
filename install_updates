@@ -15,6 +15,7 @@ module purge
 
 while read spec; do
    spack install $spec || echo Error installing new version of $spec >> failures-update.log
+   sleep 15
 done < <( spack find -x --no-groups --format '{name}%{compiler} {variants}' | sort -u )
 
 echo
