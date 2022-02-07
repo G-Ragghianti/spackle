@@ -8,6 +8,11 @@ if [ -z $SRC ]; then
   exit
 fi
 
+if [ -z $TMPDIR ]; then
+  echo Please set \$TMPDIR
+  exit
+fi
+
 TMPFILE=/tmp/.$RANDOM
 
 if [ -z $DEST ]; then

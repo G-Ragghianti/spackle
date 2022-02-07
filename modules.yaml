@@ -1,18 +1,25 @@
 modules:
-  tcl:
-    blacklist_implicits: false
-    hash_length: 4
-    naming_scheme: '${PACKAGE}/${VERSION}/${COMPILERNAME}-${COMPILERVER}'
-    all:
-      conflict:
-        - '${PACKAGE}'
-      environment:
-        set:
-          'ICL_${PACKAGE}_ROOT': '${PREFIX}'
-    cuda:
-      environment:
-        set:
-          'CUDADIR': '${PREFIX}'
-    ^rdma-core:
-      autoload: 'direct'
+  default:
+    enable:
+      - tcl
+    tcl:
+      hash_length: 4
+      naming_scheme: '${PACKAGE}/${VERSION}/${COMPILERNAME}-${COMPILERVER}'
+      all:
+        conflict:
+          - '${PACKAGE}'
+        environment:
+          set:
+            'ICL_${PACKAGE}_ROOT': '${PREFIX}'
+      cuda:
+        environment:
+          set:
+            'CUDADIR': '${PREFIX}'
+      ^rdma-core:
+        autoload: 'direct'
+      openmpi@4.1.2 +thread_multiple+atomics+cuda+pmi+legacylaunchers fabrics=verbs,cma,ucx schedulers=slurm  ^hwloc@2.7.0 ^ucx@1.11.2+thread_multiple+cm+cma+dc+mlx5-dv+rc+ud:
+        environment:
+          set:
+            'OMPI_MCA_btl_openib_allow_ib': '1'
+            'OMPI_MCA_pml_ucx_opal_mem_hooks': '1'
 
