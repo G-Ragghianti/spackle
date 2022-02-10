@@ -2,7 +2,7 @@
 packages:
   all:
     compiler: [gcc@7.3.0]
-    target: [arch=x86_64]
+    target: ['x86_64']
   openmpi:
     variants: fabrics=verbs schedulers=slurm +thread_multiple +pmi +legacylaunchers +cuda
   openblas:
